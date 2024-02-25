@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="body">
+    <div class="page">
+        <header class="header">
+            <div class="header__logo"></div>
+        </header>
+        <main class="main">
+            <section class="profile">
+                <div class="profile__items">
+                    <img src="/images/Avatar.png" alt="">
+                    <div class="profile__info">
+                        <h1 class="profile__title">Жак-Ив Кусто </h1>
+                        <p class="profile__subtitle">Иследователь океана</p>
+                        <button class="profile__edit-button"></button>
+
+
+                    </div>
+                </div>
+                <button class="profile__add-button"></button>
+            </section>
+            <section class="elements">
+                <template id="place-template">
+                    <article class="element">
+                        <button class="element__delete-button"></button>
+                        <img src="" alt="" class="element__img">
+                        <div class="element__rectangle">
+
+                            <div class="element__info">
+                                <h3 class="element__subtitle"></h3>
+
+                                <button class="element__like-button"></button>
+                            </div>
+
+                        </div>
+                    </article>
+                </template>
+
+
+            </section>
+
+        </main>
+        <footer class="footer">
+            <p class="footer__author">© 2023 Mesto Russia</p>
+        </footer>
+    </div>
+    <div class="popup popup-profile">
+        <div class="popup__container">
+            <h3 class="popup__title">Редактировать профиль</h3>
+            <form action="" class="popup__form popup-profile__form">
+                <input type="text" class="popup__input popup__input-name" placeholder="Введите имя">
+                <input type="text" class="popup__input popup__input-job" placeholder="Введите описание">
+                <button class="popup__button popup__save-button">Сохранить</button>
+
+            </form>
+            <button class="popup__close-button popup__close-profile" type="button"></button>
+        </div>
+    </div>
+    <div class="popup popup-card ">
+        <div class="popup__container">
+            <h3 class="popup__title">Новое место</h3>
+            <form action="" class="popup__form popup-card__form">
+                <input type="text" class="popup__input  popup__input-title" placeholder="Введите название">
+                <input type="text" class="popup__input popup__input-url" placeholder="Ссылка на картинку">
+
+                <button class="popup__button popup__create-button ">Создать</button>
+
+
+            </form>
+            <button class="popup__close-button popup__close-card" type="button"></button>
+        </div>
+    </div>
+    <div class="popup popup-image">
+        <div class="popup-image__wrapper">
+            <button class="popup__close-button"></button>
+            <img src="" alt="" class="popup-image__img">
+            <p class="popup-image__name"></p>
+        </div>
+
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
